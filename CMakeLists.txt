@@ -3,4 +3,4 @@ project(BatallaNaval_II)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(BatallaNaval_II tablero.h tablero.cpp)
+add_executable(BatallaNaval_II tablero.h tablero.cpp juego.h juego.cpp)

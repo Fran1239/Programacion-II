@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II
+# Install script for directory: C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

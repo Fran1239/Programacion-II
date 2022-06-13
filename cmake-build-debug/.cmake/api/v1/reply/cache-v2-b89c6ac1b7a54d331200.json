@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II/cmake-build-debug"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug"
 		},
 		{
 			"name" : "BatallaNaval_II_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II/cmake-build-debug"
+			"value" : "c:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
