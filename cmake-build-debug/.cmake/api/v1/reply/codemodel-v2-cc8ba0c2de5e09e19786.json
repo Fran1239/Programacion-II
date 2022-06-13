@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "BatallaNaval_II",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "BatallaNaval_II::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-BatallaNaval_II-Debug-0abf0841e28df99405a4.json",
+					"name" : "BatallaNaval_II",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II/cmake-build-debug",
+		"source" : "C:/Users/FRANCO/Documents/Primer semestre 2022/Programacion II/Parcial ll/BatallaNaval_II"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
