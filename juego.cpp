@@ -6,8 +6,6 @@
 #include "juego.h"
 
 juego::juego(){
-    strcpy(Tab1, " ");
-    strcpy(Tab2, " ");
     turno=0;
     fin=0;
     contA1=0;
@@ -20,23 +18,6 @@ juego::juego(){
     contC2=0;
     contD2=0;
     contE2=0;
-};
-
-juego::juego(char* T1, char* T2, int t,int f, int a1, int b1, int c1, int d1, int e1, int a2, int b2, int c2, int d2, int e2){
-    strcpy(Tab1, T1);
-    strcpy(Tab2, T2);
-    turno=t;
-    fin=f;
-    contA1=a1;
-    contB1=b1;
-    contC1=c1;
-    contD1=d1;
-    contE1=e1;
-    contA2=a2;
-    contB2=b2;
-    contC2=c2;
-    contD2=d2;
-    contE2=e2;
 };
 
 void juego::setturno(int t) {
@@ -66,6 +47,14 @@ void juego::MostrarTablero1(){
 
 void juego::MostrarTablero2(){
   Tab2.MostrarTablero();
+};
+
+void juego::setjugador1(){
+    Tab1.setjugador();
+};
+
+void juego::setjugador2(){
+    Tab2.setjugador();
 };
 
 void juego::Atacar(){

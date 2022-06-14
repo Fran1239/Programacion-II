@@ -1,40 +1,32 @@
 //
 // Created by FRANCO on 06/06/2022.
 //
+
 #include <iostream>
 #include <string.h>
 #include "tablero.h"
 
 tablero::tablero(){
-    strcpy(tab, " ");
-    strcpy(tabJuego, " ");
+    tab[6][6]={{'0','0','0','0','0','0'},
+               {'0','0','0','0','0','0'},
+               {'0','0','0','0','0','0'},
+               {'0','0','0','0','0','0'},
+               {'0','0','0','0','0','0'},
+               {'0','0','0','0','0','0'}};
+
+    tabJuego[6][6]= {{'-','-','-','-','-','-'},
+                      {'-','-','-','-','-','-'},
+                      {'-','-','-','-','-','-'},
+                      {'-','-','-','-','-','-'},
+                      {'-','-','-','-','-','-'},
+                      {'-','-','-','-','-','-'}};
+
     strcpy(jugador, " ");
 };
 
-tablero::tablero(char* t, char* tj, char* j){
-    strcpy(tab, t);
-    strcpy(tabJuego, tj);
-    strcpy(jugador, j);
-};
-
-void tablero::settab(char* t) {
-    strcpy(tab,t);
-};
-
-char* tablero::gettab(){
-    return tab;
-};
-
-void tablero::settabJuego(char* tj) {
-    strcpy(tab, tj);
-};
-
-char* tablero::gettabJuego(){
-    return tabJuego;
-};
 
 void tablero::setjugador(char* j) {
-    strcpy(tab, j);
+    strcpy(jugador, j);
 };
 
 char* tablero::getjugador(){

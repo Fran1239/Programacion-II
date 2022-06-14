@@ -54,9 +54,8 @@ int main(){
         }
     } while(opc!='s' && opc!='n');
 
-    juego1.Tab1.setjugador(j1);
-    juego1.Tab2.setjugador(j2);
-
+    juego1.setjugador1(j1);
+    juego1.setjugador2(j2);
 
     do {
             juego1.Atacar();
