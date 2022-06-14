@@ -26,36 +26,43 @@ hundido o no.
 #include <time.h>
 #include <string.h>
 #include "tablero.h"
-#include "../../Parcial ll/BatallaNaval_II/juego.h"
+#include "juego.h"
+
+using namespace std;
 
 int main(){
-    char tablero1[6][6]={{'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'}};
-    char tablero2[6][6]={{'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'},
-                         {'0','0','0','0','0','0'}};
-    char tabJuego1[6][6]= { {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'}};
-    char tabJuego2[6][6]={  {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'},
-                            {'-','-','-','-','-','-'}};
 
-    srand(time(NULL));
 
+
+
+    char opc;
+    char j1[40]="Jugador 1";
+    char j2[40]="Jugador 2";
+    juego juego1;
+
+    juego1.Tab1.GenerarTablero();
+    juego1.Tab2.GenerarTablero();
+
+
+
+    do {
+        cout<<"Desea poner los nombres de los jugadores (s/n)? ";
+        cin>>opc;
+        if(opc=='s') {
+            cout<<"Ingrese el nombre del jugador 1: ";
+            cin>>j1;
+            cout<<"Ingrese el nombre del jugador 2: ";
+            cin>>j2;
+        }
+    } while(opc!='s' && opc!='n');
+
+    juego1.Tab1.setjugador(j1);
+    juego1.Tab2.setjugador(j2);
+
+
+    do {
+            juego1.Atacar();
+    } while (!juego1.getfin());
 
 
 

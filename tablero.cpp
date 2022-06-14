@@ -5,7 +5,6 @@
 #include <string.h>
 #include "tablero.h"
 
-
 tablero::tablero(){
     strcpy(tab, " ");
     strcpy(tabJuego, " ");
@@ -30,21 +29,23 @@ void tablero::settabJuego(char* tj) {
     strcpy(tab, tj);
 };
 
+char* tablero::gettabJuego(){
+    return tabJuego;
+};
+
+void tablero::setjugador(char* j) {
+    strcpy(tab,j);
+};
+
 char* tablero::getjugador(){
     return jugador;
 };
 
-void tablero::settab(char* j) {
-    strcpy(tab,j);
-};
-
-char* tablero::gettab(){
-    return tab;
-};
-
-void tablero::GenerarTablero(char t[6][6]){
+void tablero::GenerarTablero(char* t){
     int H_V;    //Orientacion del barco,
     int x,y;    //Variable para posicion
+
+    srand(time(NULL));
 
     //barcos de 4
     H_V=rand()%2;
@@ -119,7 +120,7 @@ void tablero::GenerarTablero(char t[6][6]){
 }
 };
 
-void tablero::MostrarTablero(char t[6][6]){
+void tablero::MostrarTablero(){
         for (int i=0; i<6; i++) {
             for (int j=0; j<6; j++) {
                 std::cout<<t[i][j]<<"   ";
