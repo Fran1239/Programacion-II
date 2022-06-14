@@ -32,17 +32,15 @@ using namespace std;
 
 int main(){
 
-
-
-
     char opc;
     char j1[40]="Jugador 1";
     char j2[40]="Jugador 2";
     juego juego1;
 
-    juego1.Tab1.GenerarTablero();
-    juego1.Tab2.GenerarTablero();
 
+    juego1.GenerarTableros();
+    juego1.MostrarTablero1();
+    juego1.MostrarTablero2();
 
 
     do {
@@ -64,8 +62,19 @@ int main(){
             juego1.Atacar();
     } while (!juego1.getfin());
 
+    if(!juego1.getturno())
+        cout<<"Juego Terminado - Ganador: "<<j1<<endl;
+    else
+        cout<<"Juego Terminado - Ganador: "<<j2<<endl;
 
+    cout<<"Los tableros eran:"<<endl;
+    cout<<j1<<":"<<endl;
+    juego1.MostrarTablero1();
 
+    cout<<j2<<":"<<endl;
+    juego1.MostrarTablero2();
+
+    return 0;
 }
 
 

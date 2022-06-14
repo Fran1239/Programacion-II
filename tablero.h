@@ -28,8 +28,8 @@ public:
     char* gettabJuego();
     void setjugador(char*);
     char* getjugador();
-    void GenerarTablero(char*);
-    void MostrarTablero(char*);
+    void GenerarTablero();
+    void MostrarTablero();
 };
 
 

@@ -34,14 +34,14 @@ char* tablero::gettabJuego(){
 };
 
 void tablero::setjugador(char* j) {
-    strcpy(tab,j);
+    strcpy(tab, j);
 };
 
 char* tablero::getjugador(){
     return jugador;
 };
 
-void tablero::GenerarTablero(char* t){
+void tablero::GenerarTablero(){
     int H_V;    //Orientacion del barco,
     int x,y;    //Variable para posicion
 
@@ -53,12 +53,12 @@ void tablero::GenerarTablero(char* t){
         x=rand()%3;
         y=rand()%6;
         for (int i=0;i<4;i++)
-            t[x+i][y]='A';
+            tab[x+i][y]='A';
     } else {    //si es horizontal
         x=rand()%6;
         y=rand()%3;
         for (int i=0;i<4;i++)
-            t[x][y+i]='A';
+            tab[x][y+i]='A';
     }
 
     // barcos de 3
@@ -68,23 +68,23 @@ void tablero::GenerarTablero(char* t){
             do {
                 x=rand()%6;
                 y=rand()%6;
-            } while (x>3 || t[x][y]!='0' || t[x+1][y]!='0' || t[x+2][y]!='0');
+            } while (x>3 || tab[x][y]!='0' || tab[x+1][y]!='0' || tab[x+2][y]!='0');
             for (int j=0;j<3;j++){
                 if(i==0)
-                    t[x+j][y]='B';
+                    tab[x+j][y]='B';
                 else
-                    t[x+j][y]='C';
+                    tab[x+j][y]='C';
             }
         } else {    //si es horizontal
             do {
                 x=rand()%6;
                 y=rand()%6;
-            } while (y>3 || t[x][y]!='0' || t[x][y+1]!='0' || t[x][y+2]!='0');
+            } while (y>3 || tab[x][y]!='0' || tab[x][y+1]!='0' || tab[x][y+2]!='0');
             for (int j=0;j<3;j++) {
                 if(i==0)
-                    t[x][y+j]='B';
+                    tab[x][y+j]='B';
                 else
-                    t[x][y+j]='C';
+                    tab[x][y+j]='C';
             }
         }
     }
@@ -96,24 +96,24 @@ void tablero::GenerarTablero(char* t){
             do {
                 x=rand()%6;
                 y=rand()%6;
-            } while (x>4 || t[x][y]!='0' || t[x+1][y]!='0');
+            } while (x>4 || tab[x][y]!='0' || tab[x+1][y]!='0');
             for (int j=0;j<2;j++) {
                 if(i==0)
-                    t[x+j][y]='D';
+                    tab[x+j][y]='D';
                 else
-                    t[x+j][y]='E';
+                    tab[x+j][y]='E';
             }
 
         } else {    //si es horizontal
             do {
                 x=rand()%6;
                 y=rand()%6;
-            } while (y>4 || t[x][y]!='0' || t[x][y+1]!='0');
+            } while (y>4 || tab[x][y]!='0' || tab[x][y+1]!='0');
             for (int j=0;j<2;j++){
                 if(i==0)
-                    t[x][y+j]='D';
+                    tab[x][y+j]='D';
                 else
-                    t[x][y+j]='E';
+                    tab[x][y+j]='E';
             }
         }
     }
@@ -123,7 +123,7 @@ void tablero::GenerarTablero(char* t){
 void tablero::MostrarTablero(){
         for (int i=0; i<6; i++) {
             for (int j=0; j<6; j++) {
-                std::cout<<t[i][j]<<"   ";
+                std::cout<<tab[i][j]<<"   ";
             }
             std::cout<<std::endl;
         }

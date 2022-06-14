@@ -39,12 +39,33 @@ juego::juego(char* T1, char* T2, int t,int f, int a1, int b1, int c1, int d1, in
     contE2=e2;
 };
 
+void juego::setturno(int t) {
+    turno = t;
+};
+
+int juego::getturno(){
+    return turno;
+};
+
 void juego::setfin(int f) {
     fin = f;
 };
 
 int juego::getfin(){
     return fin;
+};
+
+void juego::GenerarTableros(){
+    Tab1.GenerarTablero();
+    Tab2.GenerarTablero();
+};
+
+void juego::MostrarTablero1(){
+  Tab1.MostrarTablero();
+};
+
+void juego::MostrarTablero2(){
+  Tab2.MostrarTablero();
 };
 
 void juego::Atacar(){
