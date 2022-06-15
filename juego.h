@@ -20,8 +20,6 @@ public:
     void setfin(int);
     int getfin();
     void GenerarTableros();
-    void MostrarTablero1();
-    void MostrarTablero2();
     void setjugador1(char *);
     void setjugador2(char *);
     void Atacar();

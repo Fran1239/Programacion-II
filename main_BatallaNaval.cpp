@@ -36,9 +36,6 @@ int main(){
     juego juego1;
 
     juego1.GenerarTableros();
-    juego1.MostrarTablero1();
-    juego1.MostrarTablero2();
-
 
     do {
         cout<<"Desea poner los nombres de los jugadores (s/n)? ";

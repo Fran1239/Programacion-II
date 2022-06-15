@@ -15,11 +15,15 @@ tablero::tablero(){
 
 char tablero::getcasillaT(int x, int y){
     return tab[x][y];
-}
+};
 
 char tablero::getcasillaTJ(int x, int y){
     return tabJuego[x][y];
-}
+};
+
+void tablero::setcasillaTJ(int x, int y, char c){
+    tabJuego[x][y]=c;
+};
 
 void tablero::setjugador(char* j) {
     strcpy(jugador, j);
@@ -30,8 +34,8 @@ char* tablero::getjugador(){
 };
 
 void tablero::GenerarTablero(){
-    int H_V;    //Orientacion del barco,
-    int x,y;    //Variable para posicion
+    int H_V;    //Orientacion del barco, si es horizontal o vertical,
+    int x,y;    //Variables para la posicion
 
     srand(time(NULL));
 
@@ -107,10 +111,19 @@ void tablero::GenerarTablero(){
     }
 };
 
-void tablero::MostrarTablero(){
+void tablero::MostrarT(){
     for (int i=0; i<6; i++) {
         for (int j=0; j<6; j++) {
             std::cout<<tab[i][j]<<"   ";
+        }
+        std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
+    }
+void tablero::MostrarTJ() {
+    for (int i=0; i<6; i++) {
+        for (int j=0; j<6; j++) {
+            std::cout<<tabJuego[i][j]<<"   ";
         }
         std::cout<<std::endl;
     }
