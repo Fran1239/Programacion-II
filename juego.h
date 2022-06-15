@@ -15,7 +15,6 @@ private:
     int contA2=0, contB2=0, contC2=0, contD2=0, contE2=0;
 public:
     juego();
-    juego();
     void setturno(int);
     int getturno();
     void setfin(int);

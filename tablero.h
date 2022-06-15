@@ -13,10 +13,8 @@ private:
     char jugador[40];
 public:
     tablero();
-    void settab(char*);
-    char* gettab();
-    void settabJuego(char*);
-    char* gettabJuego();
+    char getcasillaT(int, int);
+    char getcasillaTJ(int, int);
     void setjugador(char*);
     char* getjugador();
     void GenerarTablero();

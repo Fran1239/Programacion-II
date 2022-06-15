@@ -49,12 +49,12 @@ void juego::MostrarTablero2(){
   Tab2.MostrarTablero();
 };
 
-void juego::setjugador1(){
-    Tab1.setjugador();
+void juego::setjugador1(char* j1){
+    Tab1.setjugador(j1);
 };
 
-void juego::setjugador2(){
-    Tab2.setjugador();
+void juego::setjugador2(char* j2){
+    Tab2.setjugador(j2);
 };
 
 void juego::Atacar(){
@@ -73,21 +73,21 @@ void juego::Atacar(){
                 std::cout<<"Ingrese columna (0-5):";
                 std::cin>>y;
             } while (y<0 || y>5);
-            if (Tab2.gettabJuego()!='-') {
+            if (Tab2.getcasillaTJ(x, y) != '-') {
                 Tab2.MostrarTablero();
                 std::cout<<"Casilla ya atacada"<<std::endl;
             }
             else {
-                switch(Tab2.gettab()) {
+                switch(Tab2.getcasillaT(x, y)) {
                     case '0':
-                        Tab2.gettabJuego()='0';
+                        Tab2.getcasillaTJ(x,y) == '0';
                         Tab2.MostrarTablero();
                         strcpy(result,"AGUA");
                         std::cout<<result<<" - Cambio de turno"<<std::endl;
                         turno=!turno;
                         break;
                     case 'A':
-                        Tab2.gettabJuego()='X';
+                        Tab2.getcasillaTJ(x,y) == 'X';
                         Tab2.MostrarTablero();
                         if (contA1==3) {
                             strcpy(result,"HUNDIDO");
@@ -100,7 +100,7 @@ void juego::Atacar(){
                         contA1++;
                         break;
                     case 'B':
-                        Tab2.gettabJuego()='X';
+                        Tab2.getcasillaTJ(x,y) == 'X';
                         Tab2.MostrarTablero();
                         if (contB1==2){
                             strcpy(result,"HUNDIDO");
@@ -113,7 +113,7 @@ void juego::Atacar(){
                         contB1++;
                         break;
                     case 'C':
-                        Tab2.gettabJuego()='X';
+                        Tab2.getcasillaTJ(x,y) == 'X';
                         Tab2.MostrarTablero();
                         if (contC1==2)
                         {
@@ -127,7 +127,7 @@ void juego::Atacar(){
                         contC1++;
                         break;
                     case 'D':
-                        Tab2.gettabJuego()='X';
+                        Tab2.getcasillaTJ(x,y) == 'X';
                         Tab2.MostrarTablero();
                         if (contD1==1)
                         {
@@ -141,7 +141,7 @@ void juego::Atacar(){
                         contD1++;
                         break;
                     case 'E':
-                        Tab2.gettabJuego()='X';
+                        Tab2.getcasillaTJ(x,y) == 'X';
                         Tab2.MostrarTablero();
                         if (contE1==1)
                         {
@@ -157,7 +157,7 @@ void juego::Atacar(){
                 }
             }
 
-        } while (Tab2.gettabJuego()=='-');
+        } while (Tab2.getcasillaTJ(x,y) == '-');
 
         if (contA1==4 && contB1==3 && contC1==3 && contD1==2 && contE1==2)
             fin=1;
@@ -175,21 +175,21 @@ void juego::Atacar(){
                 std::cout<<"Ingrese columna (0-5):";
                 std::cin>>y;
             } while (y<0 || y>5);
-            if (Tab1.gettabJuego()!='-') {
+            if (Tab1.getcasillaTJ(x,y) != '-') {
                 Tab1.MostrarTablero();
                 std::cout<<"Casilla ya atacada"<<std::endl;
             }
             else {
-                switch(Tab1.gettab()) {
+                switch(Tab1.getcasillaT(x,y)) {
                     case '0':
-                        Tab1.gettabJuego()='0';
+                        Tab1.getcasillaTJ(x,y) == '0';
                         Tab1.MostrarTablero();
                         strcpy(result,"AGUA");
                         std::cout<<result<<" - Cambio de turno"<<std::endl;
                         turno=!turno;
                         break;
                     case 'A':
-                        Tab1.gettabJuego()='X';
+                        Tab1.getcasillaTJ(x,y) == 'X';
                         Tab1.MostrarTablero();
                         if (contA2==3) {
                             strcpy(result,"HUNDIDO");
@@ -202,7 +202,7 @@ void juego::Atacar(){
                         contA2++;
                         break;
                     case 'B':
-                        Tab1.gettabJuego()='X';
+                        Tab1.getcasillaTJ(x,y) == 'X';
                         Tab1.MostrarTablero();
                         if (contB2==2){
                             strcpy(result,"HUNDIDO");
@@ -215,7 +215,7 @@ void juego::Atacar(){
                         contB2++;
                         break;
                     case 'C':
-                        Tab1.gettabJuego()='X';
+                        Tab1.getcasillaTJ(x,y) == 'X';
                         Tab1.MostrarTablero();
                         if (contC2==2)
                         {
@@ -229,7 +229,7 @@ void juego::Atacar(){
                         contC2++;
                         break;
                     case 'D':
-                        Tab1.gettabJuego()='X';
+                        Tab1.getcasillaTJ(x,y) == 'X';
                         Tab1.MostrarTablero();
                         if (contD2==1)
                         {
@@ -243,7 +243,7 @@ void juego::Atacar(){
                         contD2++;
                         break;
                     case 'E':
-                        Tab1.gettabJuego()='X';
+                        Tab1.getcasillaTJ(x,y) == 'X';
                         Tab1.MostrarTablero();
                         if (contE2==1)
                         {
@@ -259,7 +259,7 @@ void juego::Atacar(){
                 }
             }
 
-        } while (Tab1.gettabJuego()=='-');
+        } while (Tab1.getcasillaTJ(x,y) == '-');
 
         if (contA2==4 && contB2==3 && contC2==3 && contD2==2 && contE2==2)
             fin=1;

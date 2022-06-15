@@ -24,6 +24,13 @@ tablero::tablero(){
     strcpy(jugador, " ");
 };
 
+char tablero::getcasillaT(int x, int y){
+    return tab[x][y];
+}
+
+char tablero::getcasillaTJ(int x, int y){
+    return tabJuego[x][y];
+}
 
 void tablero::setjugador(char* j) {
     strcpy(jugador, j);
@@ -109,7 +116,6 @@ void tablero::GenerarTablero(){
             }
         }
     }
-}
 };
 
 void tablero::MostrarTablero(){
