@@ -4,7 +4,6 @@
 
 #include <iostream>
 #include <string.h>
-#include <time.h>
 #include <stdlib.h>
 #include "tablero.h"
 
@@ -36,8 +35,6 @@ char* tablero::getjugador(){
 void tablero::GenerarTablero(){
     int H_V;    //Orientacion del barco, si es horizontal o vertical,
     int x,y;    //Variables para la posicion
-
-    srand(time(NULL));
 
     //barcos de 4
     H_V=rand()%2;
@@ -119,7 +116,8 @@ void tablero::MostrarT(){
         std::cout<<std::endl;
     }
     std::cout<<std::endl;
-    }
+    };
+
 void tablero::MostrarTJ() {
     for (int i=0; i<6; i++) {
         for (int j=0; j<6; j++) {

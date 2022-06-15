@@ -10,6 +10,8 @@ class juego {
 private:
     tablero Tab1;
     tablero Tab2;
+    char j1[40];
+    char j2[40];
     int turno=0, fin=0;
     int contA1=0, contB1=0, contC1=0, contD1=0, contE1=0;
     int contA2=0, contB2=0, contC2=0, contD2=0, contE2=0;
@@ -20,9 +22,9 @@ public:
     void setfin(int);
     int getfin();
     void GenerarTableros();
-    void setjugador1(char *);
-    void setjugador2(char *);
+    void CargarNombres();
     void Atacar();
+    void FinJuego();
 };
 
 

@@ -24,48 +24,21 @@ hundido o no.
 
 #include <iostream>
 #include "juego.h"
-#include "tablero.h"
 
 using namespace std;
 
 int main(){
 
-    char opc;
-    char j1[40]="Jugador 1";
-    char j2[40]="Jugador 2";
     juego juego1;
 
+    juego1.CargarNombres();
     juego1.GenerarTableros();
 
     do {
-        cout<<"Desea poner los nombres de los jugadores (s/n)? ";
-        cin>>opc;
-        if(opc=='s') {
-            cout<<"Ingrese el nombre del jugador 1: ";
-            cin>>j1;
-            cout<<"Ingrese el nombre del jugador 2: ";
-            cin>>j2;
-        }
-    } while(opc!='s' && opc!='n');
-
-    juego1.setjugador1(j1);
-    juego1.setjugador2(j2);
-
-    do {
         juego1.Atacar();
-    } while (!juego1.getfin());
+    } while (juego1.getfin() != 1);
 
-    if(!juego1.getturno())
-        cout<<"Juego Terminado - Ganador: "<<j1<<endl;
-    else
-        cout<<"Juego Terminado - Ganador: "<<j2<<endl;
-
-    cout<<"Los tableros eran:"<<endl;
-    cout<<j1<<":"<<endl;
-    juego1.MostrarTablero1();
-
-    cout<<j2<<":"<<endl;
-    juego1.MostrarTablero2();
+    juego1.FinJuego();
 
     return 0;
 }
