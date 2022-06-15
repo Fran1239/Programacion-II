@@ -27,8 +27,6 @@ public:
     char getcasillaT(int, int);
     char getcasillaTJ(int, int);
     void setcasillaTJ(int, int, char );
-    void setjugador(char*);
-    char* getjugador();
     void GenerarTablero();
     void MostrarT();
     void MostrarTJ();

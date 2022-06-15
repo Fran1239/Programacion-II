@@ -48,8 +48,8 @@ void juego::GenerarTableros(){
 };
 
 void juego::CargarNombres() {
-    char j1[40]="Jugador 1";
-    char j2[40]="Jugador 2";
+    char jug1[40]="Jugador 1";
+    char jug2[40]="Jugador 2";
     char opc;
 
     do {
@@ -57,15 +57,14 @@ void juego::CargarNombres() {
         cin>>opc;
         if(opc=='s') {
             cout<<"Ingrese el nombre del jugador 1: ";
-            cin>>j1;
+            cin>>jug1;
             cout<<"Ingrese el nombre del jugador 2: ";
-            cin>>j2;
+            cin>>jug2;
         }
     } while(opc!='s' && opc!='n');
 
-    Tab1.setjugador(j1);
-    Tab2.setjugador(j2);
-
+    strcpy(j1, jug1);
+    strcpy(j2, jug2);
 };
 
 
@@ -77,7 +76,7 @@ void juego::Atacar() {
 
     if (turno == 0) {
 
-        std::cout << "Ataque de " << Tab1.getjugador() << ":" << std::endl;
+        std::cout << "Ataque de " << j1 << ":" << std::endl;
 
         do {
             do {
@@ -169,7 +168,7 @@ void juego::Atacar() {
             fin = 1;
 
     } else {
-        std::cout << "Ataque de " << Tab2.getjugador() << ":" << std::endl;
+        std::cout << "Ataque de " << j2 << ":" << std::endl;
 
         do {
             do {

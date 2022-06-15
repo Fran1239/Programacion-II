@@ -24,14 +24,6 @@ void tablero::setcasillaTJ(int x, int y, char c){
     tabJuego[x][y]=c;
 };
 
-void tablero::setjugador(char* j) {
-    strcpy(jugador, j);
-};
-
-char* tablero::getjugador(){
-    return jugador;
-};
-
 void tablero::GenerarTablero(){
     int H_V;    //Orientacion del barco, si es horizontal o vertical,
     int x,y;    //Variables para la posicion
