@@ -23,10 +23,8 @@ hundido o no.
 
 
 #include <iostream>
-#include <time.h>
-#include <string.h>
-#include "tablero.h"
 #include "juego.h"
+#include "tablero.h"
 
 using namespace std;
 
@@ -36,7 +34,6 @@ int main(){
     char j1[40]="Jugador 1";
     char j2[40]="Jugador 2";
     juego juego1;
-
 
     juego1.GenerarTableros();
     juego1.MostrarTablero1();
@@ -58,7 +55,7 @@ int main(){
     juego1.setjugador2(j2);
 
     do {
-            juego1.Atacar();
+        juego1.Atacar();
     } while (!juego1.getfin());
 
     if(!juego1.getturno())

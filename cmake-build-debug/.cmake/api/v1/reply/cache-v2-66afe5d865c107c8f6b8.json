@@ -2,7 +2,7 @@
 	"entries" : 
 	[
 		{
-			"name" : "BatallaNaval_II_BINARY_DIR",
+			"name" : "BatallaNaval_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -11,10 +11,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion-II/cmake-build-debug"
 		},
 		{
-			"name" : "BatallaNaval_II_IS_TOP_LEVEL",
+			"name" : "BatallaNaval_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -26,7 +26,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "BatallaNaval_II_SOURCE_DIR",
+			"name" : "BatallaNaval_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion-II"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug"
+			"value" : "c:/Users/FRANCO/Desktop/Programacion-II/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval"
+			"value" : "C:/Users/FRANCO/Desktop/Programacion-II"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/BatallaNaval_II"
+			"value" : "C:/Program Files (x86)/BatallaNaval"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "BatallaNaval_II"
+			"value" : "BatallaNaval"
 		},
 		{
 			"name" : "CMAKE_RANLIB",

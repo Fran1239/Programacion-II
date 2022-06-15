@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: BatallaNaval_II
+# Project: BatallaNaval
 # Configurations: Debug
 # =============================================================================
 
@@ -39,49 +39,68 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/FRANCO/Desktop/Programacion-II/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target BatallaNaval_II
+# Object build statements for EXECUTABLE target BatallaNaval
 
 
 #############################################
-# Order-only phony target for BatallaNaval_II
+# Order-only phony target for BatallaNaval
 
-build cmake_object_order_depends_target_BatallaNaval_II: phony || CMakeFiles/BatallaNaval_II.dir
+build cmake_object_order_depends_target_BatallaNaval: phony || CMakeFiles/BatallaNaval.dir
 
-build CMakeFiles/BatallaNaval_II.dir/tablero.cpp.obj: CXX_COMPILER__BatallaNaval_II_Debug C$:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/tablero.cpp || cmake_object_order_depends_target_BatallaNaval_II
-  DEP_FILE = CMakeFiles\BatallaNaval_II.dir\tablero.cpp.obj.d
+build CMakeFiles/BatallaNaval.dir/juego.cpp.obj: CXX_COMPILER__BatallaNaval_Debug C$:/Users/FRANCO/Desktop/Programacion-II/juego.cpp || cmake_object_order_depends_target_BatallaNaval
+  DEP_FILE = CMakeFiles\BatallaNaval.dir\juego.cpp.obj.d
   FLAGS = -g -std=gnu++14
-  OBJECT_DIR = CMakeFiles\BatallaNaval_II.dir
-  OBJECT_FILE_DIR = CMakeFiles\BatallaNaval_II.dir
-  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval_II.dir\
-  TARGET_PDB = BatallaNaval_II.pdb
+  INCLUDES = -IC:/Users/FRANCO/Desktop/Programacion-II/.
+  OBJECT_DIR = CMakeFiles\BatallaNaval.dir
+  OBJECT_FILE_DIR = CMakeFiles\BatallaNaval.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval.dir\
+  TARGET_PDB = BatallaNaval.pdb
+
+build CMakeFiles/BatallaNaval.dir/main_BatallaNaval.cpp.obj: CXX_COMPILER__BatallaNaval_Debug C$:/Users/FRANCO/Desktop/Programacion-II/main_BatallaNaval.cpp || cmake_object_order_depends_target_BatallaNaval
+  DEP_FILE = CMakeFiles\BatallaNaval.dir\main_BatallaNaval.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/FRANCO/Desktop/Programacion-II/.
+  OBJECT_DIR = CMakeFiles\BatallaNaval.dir
+  OBJECT_FILE_DIR = CMakeFiles\BatallaNaval.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval.dir\
+  TARGET_PDB = BatallaNaval.pdb
+
+build CMakeFiles/BatallaNaval.dir/tablero.cpp.obj: CXX_COMPILER__BatallaNaval_Debug C$:/Users/FRANCO/Desktop/Programacion-II/tablero.cpp || cmake_object_order_depends_target_BatallaNaval
+  DEP_FILE = CMakeFiles\BatallaNaval.dir\tablero.cpp.obj.d
+  FLAGS = -g -std=gnu++14
+  INCLUDES = -IC:/Users/FRANCO/Desktop/Programacion-II/.
+  OBJECT_DIR = CMakeFiles\BatallaNaval.dir
+  OBJECT_FILE_DIR = CMakeFiles\BatallaNaval.dir
+  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval.dir\
+  TARGET_PDB = BatallaNaval.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target BatallaNaval_II
+# Link build statements for EXECUTABLE target BatallaNaval
 
 
 #############################################
-# Link the executable BatallaNaval_II.exe
+# Link the executable BatallaNaval.exe
 
-build BatallaNaval_II.exe: CXX_EXECUTABLE_LINKER__BatallaNaval_II_Debug CMakeFiles/BatallaNaval_II.dir/tablero.cpp.obj
+build BatallaNaval.exe: CXX_EXECUTABLE_LINKER__BatallaNaval_Debug CMakeFiles/BatallaNaval.dir/juego.cpp.obj CMakeFiles/BatallaNaval.dir/main_BatallaNaval.cpp.obj CMakeFiles/BatallaNaval.dir/tablero.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\BatallaNaval_II.dir
+  OBJECT_DIR = CMakeFiles\BatallaNaval.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval_II.dir\
-  TARGET_FILE = BatallaNaval_II.exe
-  TARGET_IMPLIB = libBatallaNaval_II.dll.a
-  TARGET_PDB = BatallaNaval_II.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\BatallaNaval.dir\
+  TARGET_FILE = BatallaNaval.exe
+  TARGET_IMPLIB = libBatallaNaval.dll.a
+  TARGET_PDB = BatallaNaval.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\FRANCO\Desktop\Programacion2\BatallaNaval\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\FRANCO\Desktop\Programacion-II\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -92,7 +111,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\FRANCO\Desktop\Programacion2\BatallaNaval\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\FRANCO\Desktop\Programacion2\BatallaNaval -BC:\Users\FRANCO\Desktop\Programacion2\BatallaNaval\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D C:\Users\FRANCO\Desktop\Programacion-II\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\FRANCO\Desktop\Programacion-II -BC:\Users\FRANCO\Desktop\Programacion-II\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -102,7 +121,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build BatallaNaval_II: phony BatallaNaval_II.exe
+build BatallaNaval: phony BatallaNaval.exe
 
 # =============================================================================
 # Folder targets.
@@ -110,9 +129,9 @@ build BatallaNaval_II: phony BatallaNaval_II.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/FRANCO/Desktop/Programacion2/BatallaNaval/cmake-build-debug
+# Folder: C:/Users/FRANCO/Desktop/Programacion-II/cmake-build-debug
 
-build all: phony BatallaNaval_II.exe
+build all: phony BatallaNaval.exe
 
 # =============================================================================
 # Built-in targets

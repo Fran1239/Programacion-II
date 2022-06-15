@@ -42,11 +42,11 @@ void juego::GenerarTableros(){
 };
 
 void juego::MostrarTablero1(){
-  Tab1.MostrarTablero();
+    Tab1.MostrarTablero();
 };
 
 void juego::MostrarTablero2(){
-  Tab2.MostrarTablero();
+    Tab2.MostrarTablero();
 };
 
 void juego::setjugador1(char* j1){
@@ -267,6 +267,5 @@ void juego::Atacar(){
     }
 
 };
-
 
 

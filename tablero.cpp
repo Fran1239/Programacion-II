@@ -4,22 +4,11 @@
 
 #include <iostream>
 #include <string.h>
+#include <time.h>
+#include <stdlib.h>
 #include "tablero.h"
 
 tablero::tablero(){
-    tab[6][6]={{'0','0','0','0','0','0'},
-               {'0','0','0','0','0','0'},
-               {'0','0','0','0','0','0'},
-               {'0','0','0','0','0','0'},
-               {'0','0','0','0','0','0'},
-               {'0','0','0','0','0','0'}};
-
-    tabJuego[6][6]= {{'-','-','-','-','-','-'},
-                      {'-','-','-','-','-','-'},
-                      {'-','-','-','-','-','-'},
-                      {'-','-','-','-','-','-'},
-                      {'-','-','-','-','-','-'},
-                      {'-','-','-','-','-','-'}};
 
     strcpy(jugador, " ");
 };
@@ -119,11 +108,11 @@ void tablero::GenerarTablero(){
 };
 
 void tablero::MostrarTablero(){
-        for (int i=0; i<6; i++) {
-            for (int j=0; j<6; j++) {
-                std::cout<<tab[i][j]<<"   ";
-            }
-            std::cout<<std::endl;
+    for (int i=0; i<6; i++) {
+        for (int j=0; j<6; j++) {
+            std::cout<<tab[i][j]<<"   ";
         }
         std::cout<<std::endl;
+    }
+    std::cout<<std::endl;
 };
