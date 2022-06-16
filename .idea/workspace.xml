@@ -16,16 +16,6 @@
   <component name="ChangeListManager">
     <list default="true" id="91705b25-12f3-48a9-aaec-a4e04060588d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/BatallaNaval.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BatallaNaval.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/juego.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/juego.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/main_BatallaNaval.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/main_BatallaNaval.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/tablero.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BatallaNaval.dir/tablero.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juego.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/juego.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tablero.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tablero.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tablero.h" beforeDir="false" afterPath="$PROJECT_DIR$/tablero.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +74,7 @@
       <updated>1655317378413</updated>
       <workItem from="1655317379943" duration="1673000" />
       <workItem from="1655319360755" duration="77000" />
-      <workItem from="1655319620238" duration="10581000" />
+      <workItem from="1655319620238" duration="11217000" />
     </task>
     <servers />
   </component>
